@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="utskrift"></p>
+ 
+    <script>
+  const dyr = ["hund", "katt", "fugl", "fisk", "hamster", "kanin", "skilpadde", "slange", "geit", "ku"];
+  
+  const animals = ["dog", "cat", "bird", "fish", "hamster", "rabbit", "tortoise", "snake", "goat", "cow"];
+
+    const utskrift = `Her er to dyr fra listen: ${dyr[3]} og ${dyr[4]}. In English they are called ${animals[3]} and ${animals[4]}.`;
+
+    console.log(dyr);
+
+    console.log(animals);
+
+    console.log(utskrift);
+
+    document.getElementById("utskrift").innerHTML = utskrift;
+
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <ul id="events"></ul>
+
+
+
+
+    <script>
+        const years= [1066, 1564, 1455 ,1346, 1215, 60, 660, 9999]
+
+        console.log(years)
+
+        years.sort((a, b) => b - a);
+
+        console.log(years)
+
+        let eventsHTML = ""
+
+        years.map((year) => {
+            eventsHTML += `<li>${year}</li>`
+        })
+
+        document.getElementById("events").innerHTML = eventsHTML
+
+
+
+
+
+
+    </script>
+</body>
+</html>

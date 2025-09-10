@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="utskrift"></p>
+
+
+
+
+    <script>
+
+const dyr = ["hund", "katt", "fugl", "fisk", "hamster", "kanin", "skilpadde", "slange", "geit", "ku"]
+
+dyr.push("papegøye", "marsvin", "rotte")
+
+dyr.sort()
+
+const utskrift = `Antall dyr i listen er ${dyr.length}. Her er alle dyrene i listen: ${dyr.join(", ")}.`
+
+console.log(dyr);
+
+document.getElementById("utskrift").innerHTML = utskrift;
+
+
+
+
+
+    </script>
+</body>
+</html>
